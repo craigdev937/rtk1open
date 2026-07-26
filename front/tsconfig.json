@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "Bundler",
+        "strict": true,
+        "jsx": "react-jsx",
+        "noEmit": true,
+        "allowImportingTsExtensions": true,
+        "forceConsistentCasingInFileNames": true,
+        "useDefineForClassFields": true,
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "isolatedModules": true,
+        "resolveJsonModule": true,
+        "module": "ESNext",
+        "target": "ES2023",
+        "lib": ["DOM", "DOM.Iterable", "ES2025"],
+        "paths": {"@public/*": ["./public/*"]}
+    },
+    "exclude": ["node_modules"],
+    "include": ["src"]
+}
+
+
+
