@@ -1,6 +1,6 @@
 :root {
-    --white1: oklch(100% 0.00011 271.152);
-    --white2: oklch(92.209% 0.01492 286.007);
+    --white: oklch(100% 0.00011 271.152);
+    --cream: oklch(92.209% 0.01492 286.007);
     --red: oklch(62.793% 0.25768 29.223);
     --pink: oklch(65.59% 0.21181 354.287);
     --orange: oklch(76.858% 0.1646 70.075);
@@ -8,10 +8,10 @@
     --turquoise: oklch(71.485% 0.12578 215.256);
     --blue: oklch(62.31% 0.1881 259.83);
     --violet: oklch(58.541% 0.20415 277.126);
-    --gre1: oklch(63.653% 0.04176 285.137);
+    --grey1: oklch(63.653% 0.04176 285.137);
     --grey2: oklch(55.439% 0.04078 257.446);
-    --dark1: oklch(22.473% 0.02712 284.003);
-    --dark2: oklch(18.614% 0.01624 284.705);
+    --navy: oklch(22.473% 0.02712 284.003);
+    --midnight: oklch(18.614% 0.01624 284.705);
     --black: oklch(0% 0 0);
     --gradient: linear-gradient(
         135deg, #2563eb, #3b82f6, #60a5fa
@@ -27,8 +27,9 @@
 }
 
 body {
-    background: var(--turquoise);
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--midnight);
+    color: var(--white);
+    font-family: "Segoe UI", Verdana, sans-serif;
 }
 
 
