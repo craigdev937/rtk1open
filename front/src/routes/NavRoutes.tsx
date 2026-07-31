@@ -9,7 +9,6 @@ import { Login } from "../pages/log/Login";
 import { Tales } from "../pages/tales/Tales";
 import { Write } from "../pages/write/Write";
 
-
 const RouteList = createBrowserRouter([
     {
         path: "/",

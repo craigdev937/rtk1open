@@ -33,13 +33,11 @@ export const Navbar = () => {
                     <button 
                         className={styles.nav__theme}
                         type="button"
-                        aria-label={
-                            mode === "dark"
+                        aria-label={mode === "dark"
                             ? "Switch to light mode"
                             : "Switch to dark mode"
                         }
-                        title={
-                            mode === "dark"
+                        title={mode === "dark"
                             ? "Switch to light mode"
                             : "Switch to dark mode"
                         }

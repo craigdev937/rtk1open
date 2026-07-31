@@ -26,9 +26,8 @@
     );
 }
 
-/* ThemeSlice writes data-theme onto <html> and resolves
-"system" to the OS value first, so these two blocks are the
-only themes the stylesheet ever has to know about. */
+/* LIGHT MODE — overrides the dark defaults above.
+   Toggled by ThemeSlice via [data-theme] on <html>. */
 :root[data-theme="light"] {
     --background: var(--white);
     --font: var(--midnight);

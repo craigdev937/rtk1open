@@ -8,7 +8,7 @@ const LoadTheme = () => {
         if (stored === "light" || stored === "dark") {
             return stored;
         };
-        // Fall back to teh OS preference.
+        // Fall back to the OS preference.
         const prefersLight = window.matchMedia(
             "(prefers-color-scheme: light)"
         ).matches;
