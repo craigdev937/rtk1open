@@ -13,11 +13,29 @@
     --navy: oklch(22.473% 0.02712 284.003);
     --midnight: oklch(18.614% 0.01624 284.705);
     --black: oklch(0% 0 0);
+    --radius: 12px;
+    --radius-sm: 8px;
+    --background: var(--midnight);
+    --font: var(--white);
+    --surface: var(--navy);
+    --surface-font: var(--white);
+    --muted: var(--grey1);
+    --border: var(--navy);
     --gradient: linear-gradient(
         135deg, #2563eb, #3b82f6, #60a5fa
     );
-    --radius: 12px;
-    --radius-sm: 8px;
+}
+
+/* ThemeSlice writes data-theme onto <html> and resolves
+"system" to the OS value first, so these two blocks are the
+only themes the stylesheet ever has to know about. */
+:root[data-theme="light"] {
+    --background: var(--white);
+    --font: var(--midnight);
+    --surface: var(--cream);
+    --surface-font: var(--midnight);
+    --muted: var(--grey2);
+    --border: var(--grey1);
 }
 
 *, *::before, *::after {
@@ -27,11 +45,10 @@
 }
 
 body {
-    background: var(--midnight);
-    color: var(--white);
+    background: var(--background);
+    color: var(--font);
     font-family: "Segoe UI", Verdana, sans-serif;
+    transition: background 0.3s ease, color 0.3s ease;
 }
-
-
 
 

@@ -9,7 +9,8 @@ header.nav__header {
     justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
-    background: var(--navy);
+    background: var(--surface);
+    transition: background 0.3s ease;
 }
 
 .nav__logo {
@@ -43,7 +44,7 @@ header.nav__header {
 }
 
 .nav__links {
-    color: var(--white);
+    color: var(--surface-font);
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
@@ -53,6 +54,31 @@ header.nav__header {
     color: var(--black);
     border-radius: 4px;
     transition: all 0.5s ease-out;
+}
+
+/* THEME TOGGLE */
+.nav__theme {
+    display: grid;
+    place-items: center;
+    margin-left: auto;
+    margin-right: 1rem;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 100%;
+    background: none;
+    color: var(--surface-font);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav__theme:hover {
+    background: var(--pink);
+    color: var(--black);
+}
+
+.nav__icon {
+    height: 1.8rem;
+    width: 1.8rem;
 }
 
 /* NAV MENU BUTTON */
@@ -68,7 +94,7 @@ header.nav__header {
 .nav__line {
     width: 50px;
     height: 5px;
-    background: var(--white);
+    background: var(--surface-font);
     display: block;
     margin: 8px auto;
     transition: all 0.3s ease-in-out;
@@ -97,7 +123,7 @@ header.nav__header {
 }
 
 .nav__burger.open::before {
-    border: 5px solid var(--white);
+    border: 5px solid var(--surface-font);
 }
 
 .nav__burger .nav__line {
@@ -132,7 +158,7 @@ header.nav__header {
         display: flex;
         flex-direction: column;
         width: 100%;
-        color: var(--black);
+        color: var(--surface-font);
         position: absolute;
         top: 90px;
         left: -100%;
@@ -141,7 +167,7 @@ header.nav__header {
     }
 
     .nav__menu.active {
-        background: var(--navy);
+        background: var(--surface);
         left: 0;
         opacity: 1;
         z-index: 1;
@@ -149,7 +175,7 @@ header.nav__header {
     }
 
     .nav__links {
-        color: var(--white);
+        color: var(--surface-font);
         text-align: center;
         padding: 1.3rem;
         width: 100%;
