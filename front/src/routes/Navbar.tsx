@@ -73,7 +73,7 @@ export const Navbar = () => {
                         `${styles.nav__menu} ${styles.active}` 
                         : `${styles.nav__menu}`
                     }>
-                        <li className={styles.nav__item}>
+                        {/* <li className={styles.nav__item}>
                             <Link
                                 to={"/"}
                                 className={styles.nav__links}
@@ -81,7 +81,7 @@ export const Navbar = () => {
                             >
                                 Home
                             </Link>
-                        </li>
+                        </li> */}
                         <li className={styles.nav__item}>
                             <Link
                                 to={"/register"}

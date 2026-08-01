@@ -13,6 +13,7 @@
   },
   "keywords": [],
   "dependencies": {
+    "@hookform/resolvers": "^5.5.7",
     "@reduxjs/toolkit": "^2.12.0",
     "lucide-react": "^1.26.0",
     "react": "^19.2.8",
@@ -36,5 +37,3 @@
     "typescript": "^7.0.2"
   }
 }
-
-
