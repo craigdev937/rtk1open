@@ -4,13 +4,13 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { LSchema } from "../../validation/Schema";
 import type { LType } from "../../validation/Schema";
-import { UserAPI } from "../../global/userAPI";
+import { UAPI } from "../../global/UAPI";
 import { UAD } from "../../global/Hooks";
 import { setUser } from "../../global/UserSlice";
 
 export const LoginForm = () => {
     const dispatch = UAD();
-    const [loguser, { isLoading }] = UserAPI.useLogMutation();
+    const [loguser, { isLoading }] = UAPI.useLogMutation();
     const [status, setStatus] = React.useState<string | null>(null);
     const { register, handleSubmit, reset,
         formState: { errors } } = useForm<LType>({

@@ -5,7 +5,6 @@ import { signToken } from "../middleware/Auth.ts";
 import { RSchema, LSchema } from "../validation/Schema.ts";
 import type { RType } from "../validation/Schema.ts";
 import type { IReg, ILog } from "../models/Interfaces.ts";
-import { email } from "zod";
 
 class UserClass {
     Register: express.Handler = async (req, res, next) => {

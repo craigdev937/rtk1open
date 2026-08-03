@@ -4,13 +4,13 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { RSchema } from "../../validation/Schema";
 import type { RType } from "../../validation/Schema";
-import { UserAPI } from "../../global/userAPI";
+import { UAPI } from "../../global/UAPI";
 import { UAD } from "../../global/Hooks";
 import { setUser } from "../../global/UserSlice";
 
 export const RegisterForm = () => {
     const dispatch = UAD();
-    const [reguser, { isLoading }] = UserAPI.useRegMutation();
+    const [reguser, { isLoading }] = UAPI.useRegMutation();
     const [status, setStatus] = React.useState<string | null>(null);
     const { register, handleSubmit, reset,
         formState: { errors } } = useForm<RType>({

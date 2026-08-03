@@ -5,8 +5,8 @@ import type { IData, ILogRes, IMsg,
 import type { LType, RType } from "../validation/Schema";
 const URL = "http://localhost:9000/api";
 
-export const UserAPI = createApi({
-    reducerPath: "UserAPI",
+export const UAPI = createApi({
+    reducerPath: "UAPI",
     tagTypes: ["Users"],
     baseQuery: fetchBaseQuery({
         baseUrl: URL,

@@ -29,10 +29,10 @@ export interface IData {
 };
 
 // The envelope every single record endpoint responds with.
-export interface IRes<T> {
+export interface IRes<Type> {
     success: boolean,
     message: string,
-    data: T
+    data: Type
 };
 
 export interface IMsg {
@@ -61,6 +61,24 @@ export interface ILogRes {
 export interface UserState {
     user: IAuthUser | null,
     isAuth: boolean
+};
+
+export interface ITale {
+    id: number,
+    author_id: number,
+    title: string,
+    text: string,
+    poster: string,
+    views: number,
+    created_at: string,
+    updated_at: string
+};
+
+export interface ITData {
+    success: boolean,
+    message: string,
+    count: number,
+    data: ITale[]
 };
 
 
