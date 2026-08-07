@@ -1,7 +1,7 @@
 .form__wrap {
     container-type: inline-size;
     container-name: regform;
-    width: min(100%, 640px);
+    width: min(100%, 1060px);
     margin: 2rem auto;
     padding-inline: 1rem;
 }

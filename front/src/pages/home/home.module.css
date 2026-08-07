@@ -1,5 +1,5 @@
 .home {
-    width: min(100%, 1200px);
+    width: min(100%, 1700px);
     margin: 2rem auto;
     padding-inline: 1rem;
 }
@@ -128,3 +128,5 @@
     border: 1px solid var(--border);
     border-radius: var(--radius);
 }
+
+
